@@ -3,7 +3,7 @@
 # 485. Max Consecutive Ones
 # https://leetcode.com/problems/max-consecutive-ones/
 
-# Approach
+# Approach => In a loop keep count of 1s, then reset count when 0 is encountered. Keep track of max count in res variable. 
 class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
         count = 0
