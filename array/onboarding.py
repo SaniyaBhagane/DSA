@@ -4,6 +4,9 @@
 # https://leetcode.com/problems/max-consecutive-ones/
 
 # Approach => In a loop keep count of 1s, then reset count when 0 is encountered. Keep track of max count in res variable. 
+# COMPLEXITY ANALYSIS:
+# Time Complexity: O(N), where N is the number of elements in the input array.  
+# Space Complexity: O(1), as we are using only a constant amount of extra space
 
 # class Solution:
 #     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
@@ -17,6 +20,11 @@
 #                 count = 0
 #         return res
 # => The above approach can be optimized slightly by updating maxCount only when 0 is encountered.
+
+# Approach 2 => In a loop keep count of 1s, then when 0 is encountered update maxCount and reset count. Finally return the maximum of maxCount and count to account for the case when array ends with 1s.
+# COMPLEXITY ANALYSIS:
+# Time Complexity: O(N), where N is the number of elements in the input array.  
+# Space Complexity: O(1), as we are using only a constant amount of extra space
 
 # class Solution:
 #     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
